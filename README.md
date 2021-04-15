@@ -102,7 +102,7 @@ struct MonoClass* OpenClass(const char* Name_Space, const char* Name)
 
 - Opening a class is quite simple the `mono_class_from_name()` function will look up our class by name in the name space specified. The assembly image only needs to be opened once so we could use the one we opened before. This function will return zero on failure to find the specified class.
 
-### Getting and setting propperties of a class
+### Getting and setting properties of a class
 
 ```cpp
 struct MonoProperty*(*mono_class_get_property_from_name)(struct MonoClass *klass, const char *name);
